@@ -1,0 +1,886 @@
+2025-02-28 21:48:33,558 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 32688 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:48:33,558 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 32688 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:48:33,558 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 21:48:33,560 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:48:33,560 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:48:33,969 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:48:33,979 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 21:48:33,982 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:48:33,983 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 21:48:34,575 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 21:48:34,575 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 21:48:34,576 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 21:48:34,576 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 21:48:34,584 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 21:48:34,584 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 21:48:34,584 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 21:48:34,584 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 21:48:35,893 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/76.223.54.146:30134]];
+2025-02-28 21:48:35,899 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 21:48:35,918 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/76.223.54.146:30134]];
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/76.223.54.146:30134]];
+	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:72)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:601)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:584)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.doExists(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:130)
+	at com.github.xiaoymin.llm.compoents.VectorStorage.initCollection(VectorStorage.java:53)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.startup(LoadStartup.java:31)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.afterPropertiesSet(LoadStartup.java:38)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.elasticsearch.ElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2695)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2154)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1279)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.lambda$doExists$2(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:582)
+	... 22 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:257)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:244)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:75)
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2692)
+	... 27 common frames omitted
+Caused by: java.net.ConnectException: Timeout connecting to [k8s.local.cn/76.223.54.146:30134]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:630)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:896)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-28 21:49:32,191 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 26556 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:49:32,191 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 26556 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:49:32,193 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 21:49:32,194 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:49:32,194 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:49:32,437 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:49:32,469 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 21:49:32,472 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:49:32,474 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 21:49:32,609 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+2025-02-28 21:49:32,614 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 21:49:32,628 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 74 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.apache.http.HttpHost.create(HttpHost.java:122)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.createHttpHost(ElasticsearchRestClientConfigurations.java:96)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.elasticsearchRestClientBuilder(ElasticsearchRestClientConfigurations.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 75 common frames omitted
+2025-02-28 21:59:11,231 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 28052 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:59:11,237 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 21:59:11,231 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 28052 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 21:59:11,249 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:59:11,249 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 21:59:11,751 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:59:11,764 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 21:59:11,768 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 21:59:11,770 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 21:59:11,924 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+2025-02-28 21:59:11,929 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 21:59:11,946 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 74 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9101/
+	at org.apache.http.HttpHost.create(HttpHost.java:122)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.createHttpHost(ElasticsearchRestClientConfigurations.java:96)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.elasticsearchRestClientBuilder(ElasticsearchRestClientConfigurations.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 75 common frames omitted
+2025-02-28 22:04:09,808 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 33392 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:04:09,808 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 33392 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:04:09,810 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:04:09,810 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:04:09,813 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:04:10,057 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:04:10,068 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:04:10,071 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:04:10,073 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:04:10,786 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:04:10,786 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:04:10,787 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:04:10,787 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:04:10,795 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:04:10,795 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:04:10,796 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:04:10,796 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:04:11,945 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/13.248.169.48:30134]];
+2025-02-28 22:04:11,951 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 22:04:11,964 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/13.248.169.48:30134]];
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.data.elasticsearch.UncategorizedElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]; nested exception is ElasticsearchException[java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ExecutionException[java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]]; nested: ConnectException[Timeout connecting to [k8s.local.cn/13.248.169.48:30134]];
+	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:72)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:601)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:584)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.doExists(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:130)
+	at com.github.xiaoymin.llm.compoents.VectorStorage.initCollection(VectorStorage.java:53)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.startup(LoadStartup.java:31)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.afterPropertiesSet(LoadStartup.java:38)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.elasticsearch.ElasticsearchException: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2695)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2154)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1279)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.lambda$doExists$2(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:582)
+	... 22 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.getValue(BaseFuture.java:257)
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:244)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:75)
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2692)
+	... 27 common frames omitted
+Caused by: java.net.ConnectException: Timeout connecting to [k8s.local.cn/13.248.169.48:30134]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:630)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:896)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-28 22:04:46,260 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 2396 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:04:46,260 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 2396 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:04:46,261 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:04:46,261 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:04:46,264 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:04:46,533 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:04:46,544 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:04:46,546 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:04:46,548 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:04:46,973 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:04:46,973 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:04:46,973 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:04:46,973 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:04:46,978 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:04:46,978 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:04:46,978 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:04:46,978 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:04:47,033 ERROR (RestHighLevelClient.java:2742)- Failed to parse info response
+java.lang.IllegalStateException: Unsupported Content-Type: text/html; charset=UTF-8
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2481)
+	at org.elasticsearch.client.RestHighLevelClient.getVersionValidation(RestHighLevelClient.java:2779)
+	at org.elasticsearch.client.RestHighLevelClient.access$200(RestHighLevelClient.java:259)
+	at org.elasticsearch.client.RestHighLevelClient$5.onSuccess(RestHighLevelClient.java:2740)
+	at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:678)
+	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399)
+	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393)
+	at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182)
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448)
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338)
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-28 22:04:47,033 ERROR (RestHighLevelClient.java:2742)- Failed to parse info response
+java.lang.IllegalStateException: Unsupported Content-Type: text/html; charset=UTF-8
+	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:2481)
+	at org.elasticsearch.client.RestHighLevelClient.getVersionValidation(RestHighLevelClient.java:2779)
+	at org.elasticsearch.client.RestHighLevelClient.access$200(RestHighLevelClient.java:259)
+	at org.elasticsearch.client.RestHighLevelClient$5.onSuccess(RestHighLevelClient.java:2740)
+	at org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onSuccess(RestClient.java:678)
+	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:399)
+	at org.elasticsearch.client.RestClient$1.completed(RestClient.java:393)
+	at org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:122)
+	at org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:182)
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:448)
+	at org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:338)
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:87)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:40)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-02-28 22:04:47,072 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8; nested exception is ElasticsearchException[Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8]
+2025-02-28 22:04:47,080 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 22:04:47,091 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loadStartup' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\LoadStartup.class]: Invocation of init method failed; nested exception is org.springframework.data.elasticsearch.UncategorizedElasticsearchException: Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8; nested exception is ElasticsearchException[Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.data.elasticsearch.UncategorizedElasticsearchException: Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8; nested exception is ElasticsearchException[Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8]
+	at org.springframework.data.elasticsearch.core.ElasticsearchExceptionTranslator.translateExceptionIfPossible(ElasticsearchExceptionTranslator.java:72)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.translateException(ElasticsearchRestTemplate.java:601)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:584)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.doExists(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.AbstractIndexTemplate.exists(AbstractIndexTemplate.java:130)
+	at com.github.xiaoymin.llm.compoents.VectorStorage.initCollection(VectorStorage.java:53)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.startup(LoadStartup.java:31)
+	at com.github.xiaoymin.llm.compoents.LoadStartup.afterPropertiesSet(LoadStartup.java:38)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 15 common frames omitted
+Caused by: org.elasticsearch.ElasticsearchException: Failed to parse info response. Check logs for detailed information - Unsupported Content-Type: text/html; charset=UTF-8
+	at org.elasticsearch.client.RestHighLevelClient.performClientRequest(RestHighLevelClient.java:2701)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:2171)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:2154)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1279)
+	at org.springframework.data.elasticsearch.core.RestIndexTemplate.lambda$doExists$2(RestIndexTemplate.java:106)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.execute(ElasticsearchRestTemplate.java:582)
+	... 22 common frames omitted
+2025-02-28 22:05:43,271 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 19644 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:05:43,271 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 19644 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:05:43,274 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:05:43,274 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:05:43,277 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:05:43,534 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:05:43,547 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 10 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:05:43,551 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:05:43,553 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:05:43,713 WARN (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+2025-02-28 22:05:43,717 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 22:05:43,732 ERROR (SpringApplication.java:821)- Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addTxtCommand' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\command\AddTxtCommand.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:921)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.github.xiaoymin.llm.LlmChatJavaHelloApplication.main(LlmChatJavaHelloApplication.java:11)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStorage' defined in file [D:\LlmInAction-master\llm_chat_java_hello\target\classes\com\github\xiaoymin\llm\compoents\VectorStorage.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchDataConfiguration$RestClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Unsatisfied dependency expressed through method 'elasticsearchRestHighLevelClient' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 46 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestClientBuilder' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 60 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestClientBuilder]: Factory method 'elasticsearchRestClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	... 74 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid HTTP host: localhost:9200/
+	at org.apache.http.HttpHost.create(HttpHost.java:122)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.createHttpHost(ElasticsearchRestClientConfigurations.java:96)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at org.springframework.boot.autoconfigure.elasticsearch.ElasticsearchRestClientConfigurations$RestClientBuilderConfiguration.elasticsearchRestClientBuilder(ElasticsearchRestClientConfigurations.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 75 common frames omitted
+2025-02-28 22:05:55,831 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 33772 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:05:55,831 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 33772 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:05:55,834 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:05:55,834 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:05:55,835 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:05:56,102 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:05:56,111 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:05:56,114 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:05:56,115 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:05:56,532 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:05:56,532 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:05:56,532 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:05:56,532 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:05:56,537 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:05:56,537 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:05:56,538 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:05:56,538 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:05:56,601 INFO (VectorStorage.java:55)- index not exists,create
+2025-02-28 22:05:56,601 INFO (VectorStorage.java:55)- index not exists,create
+2025-02-28 22:05:57,952 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:05:57,952 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:05:58,370 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:05:58,503 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 2.97 seconds (JVM running for 3.63)
+2025-02-28 22:05:58,503 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 2.97 seconds (JVM running for 3.63)
+2025-02-28 22:06:28,752 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:06:28,752 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:06:28,753 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:06:28,753 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:06:28,787 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:06:28,787 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:06:28,790 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:06:28,790 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:06:53,538 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:06:53,538 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:06:53,539 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:06:53,539 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:06:53,539 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:06:53,539 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:06:53,539 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:06:53,539 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:07:03,673 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 31724 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:07:03,673 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 31724 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:07:03,676 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:07:03,676 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:07:03,678 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:07:03,930 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:07:03,940 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:07:03,943 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:07:03,945 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:07:04,365 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:07:04,365 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:07:04,366 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:07:04,366 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:07:04,371 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:07:04,371 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:07:04,372 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:07:04,372 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:07:04,438 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:07:04,438 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:07:04,577 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:07:04,689 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.332 seconds (JVM running for 1.893)
+2025-02-28 22:07:04,689 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.332 seconds (JVM running for 1.893)
+2025-02-28 22:07:07,457 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:07:07,457 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:07:07,457 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:07:07,457 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:07:07,463 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:07:07,463 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:07:07,465 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:07:07,465 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:07:34,291 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 20084 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:07:34,291 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 20084 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:07:34,293 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:07:34,293 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:07:34,296 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:07:34,529 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:07:34,539 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:07:34,543 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:07:34,544 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:07:34,974 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:07:34,974 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:07:34,975 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:07:34,975 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:07:34,982 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:07:34,982 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:07:34,982 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:07:34,982 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:07:35,044 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:07:35,044 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:07:35,209 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:07:35,314 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.327 seconds (JVM running for 1.793)
+2025-02-28 22:07:35,314 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.327 seconds (JVM running for 1.793)
+2025-02-28 22:07:39,269 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:07:39,269 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:07:39,270 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:07:39,270 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:07:39,276 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:07:39,276 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:07:39,277 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:07:39,277 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:12:13,768 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 34188 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:12:13,768 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 34188 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:12:13,770 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:12:13,770 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:12:13,772 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:12:14,014 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:12:14,024 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:12:14,026 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:12:14,028 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:12:14,449 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:12:14,449 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:12:14,449 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:12:14,449 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:12:14,456 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:12:14,456 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:12:14,456 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:12:14,456 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:12:14,512 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:12:14,512 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:12:14,671 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:12:14,775 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.316 seconds (JVM running for 1.836)
+2025-02-28 22:12:14,775 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.316 seconds (JVM running for 1.836)
+2025-02-28 22:12:17,366 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:12:17,366 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:12:17,366 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:12:17,366 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:12:17,371 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:12:17,371 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:12:17,372 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:12:17,372 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:12:35,801 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 32508 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:12:35,801 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 32508 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:12:35,803 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:12:35,803 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:12:35,804 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:12:36,069 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:12:36,082 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:12:36,086 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:12:36,087 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:12:36,537 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:12:36,537 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:12:36,537 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:12:36,537 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:12:36,543 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:12:36,543 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:12:36,544 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:12:36,544 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:12:36,610 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:12:36,610 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:12:36,768 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:12:36,890 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.474 seconds (JVM running for 1.989)
+2025-02-28 22:12:36,890 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.474 seconds (JVM running for 1.989)
+2025-02-28 22:12:38,934 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:12:38,934 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:12:38,998 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:12:38,998 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:12:39,004 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:12:39,004 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:12:39,005 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:12:39,005 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:13:01,221 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 27004 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:13:01,221 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 27004 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:13:01,223 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:13:01,223 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:13:01,224 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:13:01,538 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:13:01,547 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:13:01,551 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:13:01,553 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:13:02,020 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:13:02,020 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:13:02,020 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:13:02,020 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:13:02,027 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:13:02,027 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:13:02,028 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:13:02,028 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:13:02,086 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:13:02,086 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:13:02,228 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:13:02,339 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.574 seconds (JVM running for 2.376)
+2025-02-28 22:13:02,339 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.574 seconds (JVM running for 2.376)
+2025-02-28 22:13:04,456 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:13:04,456 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:13:04,456 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:13:04,456 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:13:04,461 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:13:04,461 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:13:04,463 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:13:04,463 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:20:04,902 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:20:04,902 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:20:04,903 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:20:04,903 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:20:04,904 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:20:04,904 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:20:04,904 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:20:04,904 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:20:48,313 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 19892 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:20:48,313 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 19892 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:20:48,315 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:20:48,315 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:20:48,318 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:20:48,555 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:20:48,564 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:20:48,567 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:20:48,569 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:20:48,956 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:20:48,956 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:20:48,956 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:20:48,956 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:20:48,978 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:20:48,978 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:20:48,981 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:20:48,981 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:20:49,056 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:20:49,056 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:20:49,335 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.303 seconds (JVM running for 1.929)
+2025-02-28 22:20:49,335 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.303 seconds (JVM running for 1.929)
+2025-02-28 22:20:49,338 INFO (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-28 22:20:55,937 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 21584 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:20:55,937 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 21584 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-02-28 22:20:55,938 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:20:55,938 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-02-28 22:20:55,940 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-02-28 22:20:56,174 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:20:56,185 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-02-28 22:20:56,188 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-02-28 22:20:56,189 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-02-28 22:20:56,600 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:20:56,600 INFO (LoadStartup.java:37)- start load.....
+2025-02-28 22:20:56,600 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:20:56,600 INFO (LoadStartup.java:26)- init vector collection
+2025-02-28 22:20:56,606 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:20:56,606 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250228
+2025-02-28 22:20:56,607 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:20:56,607 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250228
+2025-02-28 22:20:56,661 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:20:56,661 INFO (LoadStartup.java:32)- init collection success.
+2025-02-28 22:20:56,801 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-02-28 22:20:56,917 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.282 seconds (JVM running for 1.751)
+2025-02-28 22:20:56,917 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.282 seconds (JVM running for 1.751)
+2025-02-28 22:20:59,217 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:20:59,217 INFO (AddTxtCommand.java:31)- start add doc.
+2025-02-28 22:20:59,218 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:20:59,218 INFO (TxtChunk.java:30)- start chunk---> docId:001,path:data/001.txt
+2025-02-28 22:20:59,223 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:20:59,223 INFO (TxtChunk.java:36)- chunk size:3
+2025-02-28 22:20:59,225 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:20:59,225 INFO (ZhipuAI.java:107)- start embedding,size:3
+2025-02-28 22:20:59,225 INFO (ZhipuAI.java:121)- start embedding,content:直播吧10月12日讯 NBA季前赛，76人主场迎战凯尔特人，两队首场季前赛交锋在波士顿进行，76人登帝组合缺阵，凯尔特人新援波津、霍勒迪等齐亮相，最终凯尔特人8分优势战胜76人，本场比赛登帝继续缺阵，绿军双探花也不打。
+
+波尔津吉斯上来就里突外投连续取分，凯尔特人打出不错开局，但马克西能给出回应，随后凯尔特人接连外线发炮再次建立领先，铁林上来里突外投连砍8分一度率队反超比分，但绿军又接连三分稳住局势，次节乌布雷手感火热外线连续命中，双方展开三分对飚，比分交替领先，波津接连造杀伤，淮塔里突外投连砍6分，绿军一
+2025-02-28 22:20:59,225 INFO (ZhipuAI.java:121)- start embedding,content:直播吧10月12日讯 NBA季前赛，76人主场迎战凯尔特人，两队首场季前赛交锋在波士顿进行，76人登帝组合缺阵，凯尔特人新援波津、霍勒迪等齐亮相，最终凯尔特人8分优势战胜76人，本场比赛登帝继续缺阵，绿军双探花也不打。
+
+波尔津吉斯上来就里突外投连续取分，凯尔特人打出不错开局，但马克西能给出回应，随后凯尔特人接连外线发炮再次建立领先，铁林上来里突外投连砍8分一度率队反超比分，但绿军又接连三分稳住局势，次节乌布雷手感火热外线连续命中，双方展开三分对飚，比分交替领先，波津接连造杀伤，淮塔里突外投连砍6分，绿军一

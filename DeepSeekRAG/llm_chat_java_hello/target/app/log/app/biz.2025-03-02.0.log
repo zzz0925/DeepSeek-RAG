@@ -1,0 +1,70 @@
+2025-03-02 15:19:47,051 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 10636 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-03-02 15:19:47,051 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 10636 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-03-02 15:19:47,053 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-03-02 15:19:47,053 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-03-02 15:19:47,053 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-03-02 15:19:47,506 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-02 15:19:47,517 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-02 15:19:47,519 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-02 15:19:47,522 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-02 15:19:48,231 INFO (LoadStartup.java:37)- start load.....
+2025-03-02 15:19:48,231 INFO (LoadStartup.java:37)- start load.....
+2025-03-02 15:19:48,231 INFO (LoadStartup.java:26)- init vector collection
+2025-03-02 15:19:48,231 INFO (LoadStartup.java:26)- init vector collection
+2025-03-02 15:19:48,237 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250302
+2025-03-02 15:19:48,237 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250302
+2025-03-02 15:19:48,238 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250302
+2025-03-02 15:19:48,238 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250302
+2025-03-02 15:19:48,430 INFO (VectorStorage.java:55)- index not exists,create
+2025-03-02 15:19:48,430 INFO (VectorStorage.java:55)- index not exists,create
+2025-03-02 15:19:50,777 INFO (LoadStartup.java:32)- init collection success.
+2025-03-02 15:19:50,777 INFO (LoadStartup.java:32)- init collection success.
+2025-03-02 15:19:51,068 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-03-02 15:19:51,233 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 4.769 seconds (JVM running for 5.822)
+2025-03-02 15:19:51,233 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 4.769 seconds (JVM running for 5.822)
+2025-03-02 15:19:59,515 INFO (AddTxtCommand.java:31)- start add doc.
+2025-03-02 15:19:59,515 INFO (AddTxtCommand.java:31)- start add doc.
+2025-03-02 15:19:59,516 INFO (TxtChunk.java:45)- start chunk---> docId:003.pdf, path:data/003.pdf.pdf
+2025-03-02 15:19:59,516 INFO (TxtChunk.java:45)- start chunk---> docId:003.pdf, path:data/003.pdf.pdf
+2025-03-02 15:19:59,516 ERROR (TxtChunk.java:69)- PDF 分块错误: class path resource [data/003.pdf.pdf] cannot be opened because it does not exist
+2025-03-02 15:19:59,516 ERROR (TxtChunk.java:69)- PDF 分块错误: class path resource [data/003.pdf.pdf] cannot be opened because it does not exist
+2025-03-02 15:19:59,518 INFO (ZhipuAI.java:108)- start embedding,size:0
+2025-03-02 15:19:59,518 INFO (ZhipuAI.java:108)- start embedding,size:0
+2025-03-02 15:19:59,518 INFO (VectorStorage.java:67)- save vector,collection:llm_action_rag_20250302,size:0
+2025-03-02 15:19:59,518 INFO (VectorStorage.java:67)- save vector,collection:llm_action_rag_20250302,size:0
+2025-03-02 15:21:16,969 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 31188 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-03-02 15:21:16,969 INFO (StartupInfoLogger.java:55)- Starting LlmChatJavaHelloApplication using Java 17.0.10 on DESKTOP-18MJV58 with PID 31188 (D:\LlmInAction-master\llm_chat_java_hello\target\classes started by Zhao in D:\LlmInAction-master\llm_chat_java_hello)
+2025-03-02 15:21:16,972 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-03-02 15:21:16,972 INFO (Version.java:21)- HV000001: Hibernate Validator 6.2.5.Final
+2025-03-02 15:21:16,972 INFO (SpringApplication.java:631)- No active profile set, falling back to 1 default profile: "default"
+2025-03-02 15:21:17,218 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-03-02 15:21:17,230 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-03-02 15:21:17,233 INFO (RepositoryConfigurationDelegate.java:132)- Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-03-02 15:21:17,236 INFO (RepositoryConfigurationDelegate.java:201)- Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-03-02 15:21:17,672 INFO (LoadStartup.java:37)- start load.....
+2025-03-02 15:21:17,672 INFO (LoadStartup.java:37)- start load.....
+2025-03-02 15:21:17,672 INFO (LoadStartup.java:26)- init vector collection
+2025-03-02 15:21:17,672 INFO (LoadStartup.java:26)- init vector collection
+2025-03-02 15:21:17,677 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250302
+2025-03-02 15:21:17,677 INFO (LoadStartup.java:28)- init collection:llm_action_rag_20250302
+2025-03-02 15:21:17,678 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250302
+2025-03-02 15:21:17,678 INFO (VectorStorage.java:50)- collection:llm_action_rag_20250302
+2025-03-02 15:21:17,738 INFO (LoadStartup.java:32)- init collection success.
+2025-03-02 15:21:17,738 INFO (LoadStartup.java:32)- init collection success.
+2025-03-02 15:21:17,865 WARN (Log.java:115)- Unable to create a system terminal, creating a dumb terminal (enable debug logging for more information)
+2025-03-02 15:21:17,972 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.358 seconds (JVM running for 1.818)
+2025-03-02 15:21:17,972 INFO (StartupInfoLogger.java:61)- Started LlmChatJavaHelloApplication in 1.358 seconds (JVM running for 1.818)
+2025-03-02 15:21:21,386 INFO (AddTxtCommand.java:31)- start add doc.
+2025-03-02 15:21:21,386 INFO (AddTxtCommand.java:31)- start add doc.
+2025-03-02 15:21:21,387 INFO (TxtChunk.java:45)- start chunk---> docId:003.pdf, path:data/003.pdf
+2025-03-02 15:21:21,387 INFO (TxtChunk.java:45)- start chunk---> docId:003.pdf, path:data/003.pdf
+2025-03-02 15:21:21,701 INFO (TxtChunk.java:57)- chunk size: 5
+2025-03-02 15:21:21,701 INFO (TxtChunk.java:57)- chunk size: 5
+2025-03-02 15:21:21,703 INFO (ZhipuAI.java:108)- start embedding,size:5
+2025-03-02 15:21:21,703 INFO (ZhipuAI.java:108)- start embedding,size:5
+2025-03-02 15:21:27,312 INFO (VectorStorage.java:67)- save vector,collection:llm_action_rag_20250302,size:5
+2025-03-02 15:21:27,312 INFO (VectorStorage.java:67)- save vector,collection:llm_action_rag_20250302,size:5
+2025-03-02 15:21:27,625 INFO (VectorStorage.java:80)- 保存向量成功-size:5
+2025-03-02 15:21:27,625 INFO (VectorStorage.java:80)- 保存向量成功-size:5
+2025-03-02 15:21:27,625 INFO (AddTxtCommand.java:39)- finished
+2025-03-02 15:21:27,625 INFO (AddTxtCommand.java:39)- finished

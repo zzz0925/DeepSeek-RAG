@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: llm-rag-001
+  elasticsearch:
+    uris: http://localhost:9200
+  shell:
+    history:
+      name: test
+    theme:
+      name: aaa
+logging:
+  config: classpath:logback-local.xml
+# 自定义配置
+llm:
+  # 智谱AI开放密钥，开发者替换为自己的
+  zp-key: cb7f47c37e9e4474a705906527dcb0d6.XrN16gR8j0dEN35I
+  ds-key: sk-6567369e5780490d86c34c7ada412755
