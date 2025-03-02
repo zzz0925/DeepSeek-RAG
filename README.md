@@ -13,6 +13,7 @@ add xx.txt/xx.pdf
 
 chat xxx
 
+参考自https://github.com/xiaoymin/LlmInAction?tab=readme-ov-file
 后续会持续更新，欢迎大家提出宝贵意见。
 
 
