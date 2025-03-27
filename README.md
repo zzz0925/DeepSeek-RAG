@@ -13,6 +13,12 @@ add xx.txt/xx.pdf
 
 chat xxx
 
+
+todoList:
+
+-增加图片ocr识别功能；
+-增加对聊天记录的缓存功能，在下次对话开始时，能首先读取本地存储的对话记录。
+
 参考自https://github.com/xiaoymin/LlmInAction?tab=readme-ov-file
 后续会持续更新，欢迎大家提出宝贵意见。
 
