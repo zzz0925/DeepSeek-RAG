@@ -1,4 +1,4 @@
-#快速开始
+###快速开始
 
 在yml文件中配置自己的智谱aiAPI和deepseek API。
 
@@ -14,7 +14,7 @@ add xx.txt/xx.pdf
 chat xxx
 
 
-#todoList:
+###todoList:
 
 -增加图片ocr识别功能；
 
