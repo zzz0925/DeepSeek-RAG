@@ -1,4 +1,4 @@
-##快速开始
+## 快速开始
 
 1)在yml文件中配置自己的智谱aiAPI和deepseek API。
 
@@ -18,7 +18,7 @@ chat xxx
 ```
 
 
-##todoList:
+## todoList:
 
 -增加图片ocr识别功能；
 
@@ -26,7 +26,7 @@ chat xxx
 
 
 
-参考自(github)[https://github.com/xiaoymin/LlmInAction?tab=readme-ov-file]
+参考自 [github](https://github.com/xiaoymin/LlmInAction?tab=readme-ov-file)
 
 
 后续会持续更新，欢迎大家提出宝贵意见。
