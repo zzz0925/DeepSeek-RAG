@@ -1,4 +1,4 @@
-###快速开始
+##快速开始
 
 1)在yml文件中配置自己的智谱aiAPI和deepseek API。
 
@@ -6,7 +6,7 @@
 将文本数据或者pdf存放在data目录下，然后运行以下命令：
 
 ```
-**add xx.txt/xx.pdf**
+add xx.txt/xx.pdf
 ```
 
 即可将txt\pdf文件向量化后的内容保存在ES数据库中。
@@ -14,11 +14,11 @@
 3)对话:
 
 ```
-**chat xxx**
+chat xxx
 ```
 
 
-###todoList:
+##todoList:
 
 -增加图片ocr识别功能；
 
@@ -27,6 +27,7 @@
 
 
 参考自(github)[https://github.com/xiaoymin/LlmInAction?tab=readme-ov-file]
+
 
 后续会持续更新，欢迎大家提出宝贵意见。
 
